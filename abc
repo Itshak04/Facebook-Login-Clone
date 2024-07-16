@@ -1,0 +1,22 @@
+
+
+
+
+            <lebel class="p-2 border rounded m-2">
+                Female
+                <input type="radio" name="genderGroup1"
+                    value="radio" id="Gender_group_1_1">
+            </lebel>
+            <lebel class=" p-2 border rounded m-2 ">
+                Male
+                <input type="radio" name="genderGroup1"
+                    value="radio" id="Gender_group_1_1">
+            </lebel>
+            <lebel class=" p-2 border rounded m-2">
+                Other
+                <input type="radio" name="genderGroup1"
+                    value="radio" id="Gender_group_1_1">
+            </lebel>
+
+
+            document.getElementById("createForm").style.display = "block";

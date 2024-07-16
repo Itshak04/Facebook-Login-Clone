@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>FaceBook log in or sign up</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="icon" href="images/fb_iconpng.png" type="image/x-icon" />
+        <link rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </head>
+
+    <body style="background: #f0f2f5;">
+        <!--- Heading-->
+        <div
+            class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
+            <div class="row">
+                <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+                    <h1 class="fw-bold text-primary fs-0 col col-sm-12">facebook</h1>
+                    <p
+                        class="w-75 mx-auto mx-lg-0 fs-4 text-width col col-sm-12">
+                        facebook helps you to connect and share with the
+                        people
+                        in your life.
+                    </p>
+                </div>
+            </div>
+            <!--form-->
+            <div style="max-width: 28rem; width: 100%" class="login-box">
+                <div class="bg-white shadow p-3 input-group-lg rounded">
+                    <input type="email" class="form-control my-3"
+                        placeholder="Email address or phone number" />
+                    <input type="password" class="form-control my-3"
+                        placeholder="Password" />
+                    <a href="#" class="btn btn-primary w-100 my-3 fs-5">Log
+                        In</a>
+                    <a href="#"
+                        class="text-center text-decoration-none offset-4 fontStyle">Forgotten
+                        password ?</a>
+                    <hr>
+                    <a href="#"
+                        class="btn btn-success fs-5 offset-3 w-50 regForm"
+                        id="button" onclick="openForm()">Create Account</a>
+                </div>
+                <div class="my-3 text-center fs-6">
+                    <p><span><a href="#"
+                                class="text-decoration-none fw-bold text-dark">Create
+                                a Page</a></span> for a
+                        celebrity, brand or business.</p>
+                </div>
+            </div>
+        </div>
+        <div class="popUp shadow rounded m-5 p-2" id="createForm">
+            <form>
+                <div class="popUp_header">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3>Sign Up</h3>
+                            <p class="fs-7" style="color: #ccc;">it's quick
+                                and
+                                easy.</p>
+                        </div>
+                        <div class="col-6 text-end fw-bold fs-3"
+                            onclick="closeForm()">
+                            <a href="#" style="color: #606771;"><i
+                                    class='bx bx-x'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <input type="text" placeholder="First name" required
+                        class="form-control m-2">
+                    <input type="text" placeholder="Surname" required
+                        class="form-control m-2">
+                </div>
+                <input type="number"
+                    placeholder="Mobile number or email address" required
+                    class="form-control m-2 adsbox">
+                <input type="password" placeholder="New password" required
+                    class="form-control m-2 adsbox">
+                <p style="font-size: 15px;color: #ccc;" class="m-2">Date of
+                    birth<span class="question m-1 fs-6"><a href="#"><i
+                                class="bx bx-question-mark fw-bold text-light"></i></a></span></p>
+                <div class="d-flex m-2">
+                    <input type="text" required placeholder="Month"
+                        class="form-control m-1">
+                    <input type="text" required placeholder="Day"
+                        class="form-control m-1">
+                    <input type="text" required placeholder="Year"
+                        class="form-control m-1">
+                </div>
+                <p style="font-size: 15px;color: #ccc;" class="m-2">Gender<span
+                        class="question m-1 fs-6"><a href="#"><i
+                                class="bx bx-question-mark fw-bold text-light"></i></a></span></p>
+                <!--- <Gender-selection>--->
+                <form class="d-flex form-control">
+                    <div class="d-flex m-2">
+                        <input type="text" required placeholder="Female"
+                            class="form-control m-1">
+                        <input type="text" required placeholder="Male"
+                            class="form-control m-1">
+                        <input type="text" required placeholder="Other"
+                            class="form-control m-1">
+                    </div>
+                    <footer>
+                        <p class="fs-8 mx-3" style="color: #8d949e;">People
+                            who
+                            use our service may have uploaded your contact
+                            information to<br>Facebook.<span><a href="#"
+                                    class="text-decoration-none">Learn
+                                    more.</a></span></p>
+                        <p class="fs-9 mx-3" style="color: #8d949e;">By
+                            clicking Sign Up.you agree to our <span><a
+                                    href="#" class="text-decoration-none">Terms,
+                                    Privacy Policy</a></span>
+                            and <span><a href="#"
+                                    class="text-decoration-none">Cookies
+                                    Policy</a></span>.You
+                            may receive SMS notifications from us and can
+                            opt out at any time.</p>
+                        <div class="btn btn-success fs-5 offset-3 w-50">Sign
+                            Up</div>
+                    </footer>
+                </form>
+            </form>
+        </div>
+        <!--footer-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class="bg-white p-4 text-muted my-5 py-5">
+            <div class="container">
+                <!---language-->
+                <div class="d-flex flex-wrap" style="color: #737373;">
+                    <p class="mx-2 fs-7 mb-0">English (US)</p>
+                    <p class="mx-2 fs-7 mb-0">বাংলা</p>
+                    <p class="mx-2 fs-7 mb-0">हिंदी</p>
+                    <p class="mx-2 fs-7 mb-0">اردو</p>
+                    <p class="mx-2 fs-7 mb-0">ଓଡିଆ</p>
+                    <p class="mx-2 fs-7 mb-0">Español</p>
+                    <p class="mx-2 fs-7 mb-0">Português (Brazil)</p>
+                    <p class="mx-2 fs-7 mb-0">Français (France)</p>
+                    <p class="mx-2 fs-7 mb-0">Deutsch</p>
+                    <p class="mx-2 fs-7 mb-0">Italiano</p>
+                    <p class="mx-2 fs-7 mb-0 border"
+                        style="background: #f0f2f5;"><i
+                            class='bx bx-plus fw-bold'></i></p>
+                </div>
+                <hr>
+                <div class="d-flex flex-wrap">
+                    <p class="mx-2 fs-7 mb-0" style="color: #8a8d91;">Sign Up</p>
+                    <p class="mx-2 fs-7 mb-0">Log in</p>
+                    <p class="mx-2 fs-7 mb-0">Messenger</p>
+                    <p class="mx-2 fs-7 mb-0">Facebook Lite</p>
+                    <p class="mx-2 fs-7 mb-0">Video</p>
+                    <p class="mx-2 fs-7 mb-0">Places</p>
+                    <p class="mx-2 fs-7 mb-0">Games</p>
+                    <p class="mx-2 fs-7 mb-0">Marketplaces</p>
+                    <p class="mx-2 fs-7 mb-0">Meta Pay</p>
+                    <p class="mx-2 fs-7 mb-0">Meta Store</p>
+                    <p class="mx-2 fs-7 mb-0">Meta Quest</p>
+                    <p class="mx-2 fs-7 mb-0">Imagine with Meta AI</p>
+                    <p class="mx-2 fs-7 mb-0">Instagram</p>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <p class="mx-2 fs-7 mb-0">Threads</p>
+                    <p class="mx-2 fs-7 mb-0">Fundraisers</p>
+                    <p class="mx-2 fs-7 mb-0">Services</p>
+                    <p class="mx-2 fs-7 mb-0">Voting Information Centre</p>
+                    <p class="mx-2 fs-7 mb-0">Privacy Policy</p>
+                    <p class="mx-2 fs-7 mb-0">Privacy Centre</p>
+                    <p class="mx-2 fs-7 mb-0">Groups</p>
+                    <p class="mx-2 fs-7 mb-0">About</p>
+                    <p class="mx-2 fs-7 mb-0">Create ad</p>
+                    <p class="mx-2 fs-7 mb-0">Create Page</p>
+                    <p class="mx-2 fs-7 mb-0">Developers</p>
+                    <p class="mx-2 fs-7 mb-0">Careers</p>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <p class="mx-2 fs-7 mb-0">Cookies</p>
+                    <p class="mx-2 fs-7 mb-0">AdChoicer |></p>
+                    <p class="mx-2 fs-7 mb-0">Terms</p>
+                    <p class="mx-2 fs-7 mb-0">Help</p>
+                    <p class="mx-2 fs-7 mb-0">Contact uploading and non-users</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="d-flex flex-wrap">
+                    <p class="mx-2 fs-7 mb-0">Meta © 2024</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

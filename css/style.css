@@ -1,0 +1,65 @@
+
+body{
+    background: #f0f2f5;
+}
+.fontStyle{
+	font-family: 'SF Pro Display', sans-serif;
+}
+.fontStyle:hover {
+	color: black;
+	text-decoration: underline;
+}
+.fs-0{
+    font-size: 4rem;
+}
+.fs-7{
+    font-size: 0.8rem;
+}
+.fs-8{
+	font-size: 0.7rem;
+}
+.fs-9{
+	font-size: 0.6rem;
+}
+.text-width{
+    max-width: 630px;
+}
+@media (max-width: 991px) and (min-width:767px){
+	.login-box{
+		margin-left: 125px;
+	}
+}
+@media (max-width: 768px) and (min-width:500px){
+	.login-box{
+		margin-left: 25px;
+	}
+}
+.question{
+	background: #ccc;
+	padding: 1px;	
+	border-radius: 50%;
+	color: #fff;
+}
+.popUp{
+	display: none;
+	background: #fff;
+	max-width: 450px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:  translate(-60%, -60%);
+}
+.adsbox{
+	max-width: 420px;
+}
+.gender-wrapper{
+	background: #fff;
+	border: 1px solid #ccd0d5;
+	box-sizing: border-box;
+	display: inline-block;
+	flex: 1 0 auto;
+	font-weight: normal;
+	height: 36px;
+	padding: 4px;
+	border-radius: 5px;
+}
